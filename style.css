@@ -1,0 +1,535 @@
+/* //////////////// General ////////////////  */
+
+* /* pour tous les éléments*/{
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 16px;
+  
+}
+p {
+  font-size: 14px; 
+}
+a {
+  text-decoration: none;
+  color: black
+}
+
+.fa-star {
+  font-size: 10px;
+}
+.fa-info {
+  font-size: 14px;
+}
+.euro {
+  font-weight: bolder;
+}
+/* Color */
+.color-blue ,.fa-solid {
+  color: #0065fc;
+}
+.color-black ,h2,h3{
+  color: #000000;
+}
+.color-grey {
+  color: #F2F2F2;
+}
+.no-text-deco {
+  text-decoration: none;}
+/* ////////////////////////// flex-box //////////////////////// */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-start {
+  display: flex;
+justify-content: flex-start;
+  flex-direction: row;
+  }
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-grow  {
+  flex-grow: 1;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*////////////////////////// Body /////////////////////// */
+body {
+  
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  padding: 0px 40px;
+}
+/* //////////////////////// Header //////////////////// */
+.container-header {
+  margin-top: 35px;
+  }
+.header-position {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.header-logo {
+ align-items: center;
+ margin: 0;
+}
+.header-logo img {
+  height: 19px;
+}
+/* ///////////////////////////// Nav ////////////////////// */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.link-nav  {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  padding-top: 40px;
+  margin-left: 33px;
+  border-top: 2px solid transparent;
+}
+
+.link-nav:hover  {
+  border-top: 2px solid #0065fc;
+  color: #0065fc;       
+}
+nav p , .header-logo  {
+  display: flex;
+  justify-content: center;
+
+}
+/* *************** * Search-bar * ********************  */
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.fa-location-dot {
+  border-radius: 20px 0 0 20px;
+cursor: pointer;
+width: 60px;
+height: 50px;
+background-color: #F2F2F2;
+}
+input {
+  height: 50px;
+border: 1px solid #f2f2f2;
+width: 20%;
+}
+.search-bar input::placeholder {
+color: black;
+font-weight: 700;
+padding-left: 15px;
+}
+button {
+  height: 50px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  color: white;
+  background-color: #0065fc;
+}
+button span {
+
+  position: relative;
+
+}
+
+.fa-magnifying-glass {
+  display: none;
+}
+/*  ***************  * Filtre *  **********************************  */
+.container-filtre {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+.panel-filtre {
+  gap :30px;
+}
+.box-filtre {
+  height: 50px;
+  border: 3px solid #f2f2f2;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 15px;
+  border-radius: 25px;
+}
+.box-filtre i {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.box-filtre:hover {
+  background-color: #deebff;
+  border-color: #deebff;
+  color: #0065fc;
+  border-radius: 25px;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+/*  ******************* * Info *  ******************************* */
+.container-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 90px;
+}
+.logo-info {
+  margin-right: 10px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #f2f2f2;
+  margin-left: 10px;
+  padding: 15px;
+}
+.info-title {
+  padding-top: 7px;
+}
+/* ///////////////////////////////////////// main /////////////////////////////// */
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 3%;
+}
+main h3 {
+  margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+}
+main p {
+  margin-block-start: 0.2em;
+}
+
+.card {
+  width: 31%;
+  height: 220px;
+  border: 4px solid #ffffff;
+  background: #ffffff;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  border-radius: 20px;
+  }
+  .text-position {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    padding-top: 8px;
+  }
+    span {
+    position: absolute;
+    padding-top: 55px;
+  }
+  .font-subtitle  {
+  font-size: 18px;
+  }
+  
+/* ****************************** hebergements **************** */
+.hebergement-panel {
+  width: 66%;
+  box-shadow: 1px 1px 1px 1px #d9d9d9;
+  background-color: #F2F2F2;
+  padding: 40px 30px 40px 30px;
+  border-radius: 20px;
+}
+
+.hebergement-box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  row-gap: 33px ;
+  }
+  .hebergement-title {
+    margin-bottom: 20px;
+  }
+
+.hebergement-img {
+  height: 124px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* ************************** * populaires * ******************** */
+.populaires-panel {
+  width: 30%;
+  background-color: #F2F2F2;
+  box-shadow: 1px 1px 1px 1px #d9d9d9;
+  border-radius: 20px;
+  padding: 40px 30px 00px 30px;
+}
+.populaires-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.box-populaires {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  row-gap: 33px ;
+  column-gap: 25px;
+}
+.populaires {
+  border: 4px solid #ffffff;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #DADADA;
+  border-radius: 20px;
+  }
+.populaires h3{
+    padding-right: 35px;
+  }
+  .popuaires-img {
+    height: 140px;
+    width: 33%;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    }
+    .populaires span {
+      position: absolute;
+      padding-top: 105px;
+    }
+/*/////////////////////// Aside ////////////////// */
+aside {
+  display: flex;
+}
+aside h3 {
+  padding-left: 10px;
+}
+
+/* **************** *  Activites  * ************* */
+.activites-panel {
+  padding: 40px 30px 50px 30px;
+}
+.box-activites {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  column-gap: 50px;
+}
+.card-activites {
+width: 25%;
+background: #ffffff;
+filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+border-radius: 20px;
+  }
+.activites-img {
+height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+/* ////////////////////////////////// Footer //////////////////////////// */
+footer {
+  padding: 50px;
+  background-color: #F2F2F2;
+}
+/* /////////////// tablette /////////////////////// */
+
+@media (max-width: 1024px) {
+  /* ////////////main //////////////////////////// */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 50px;
+  }
+  /*  *** * Hebergement * ****************** */
+  .hebergement-panel {
+    width: 100%;
+  }
+  /* ** * Populaires * **************** */
+
+  .populaires-panel {
+    width: 100%;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  }
+  .box-populaires {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    row-gap: 33px ;
+    column-gap: 25px;
+  }
+  .populaires {
+    width: 100%;
+  }
+  /* ////////////////////////   Aside ////////////////////////////////////// */
+  .activites-img {
+    height: 210px;
+    }
+    .card-activites {
+      width: 20%;
+      height: 270px;
+      }
+    .card-activites {
+      margin-block-start: 2px;
+      
+    }
+}
+/* ///////////////////////////////// Mobile /////////////////////// */
+@media (max-width: 768px) {
+ /* /////////////////////////// * Body * //////////////////////// */*
+  h1,h2,h3,p,span,.fa-info ,.euro{
+  font-size: 1.2em;
+}
+.fa-star{
+  font-size: 0.8rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+  /* ////////////////////// * Header * ///////////////////// */
+  .container-header {
+  margin-left: 20px;
+  margin-right: 20px;
+  }
+
+  .header-logo img {
+    height: 30px;
+    margin-top: 20px;
+  }
+    .header-position {
+    flex-direction: column;
+}
+
+  /* ///////////////// * nav * ////////////////// */
+  nav {
+    width: 100%;
+    margin: 0;
+  }
+  .link-nav {
+    border-top: none;
+    border-bottom: 2px solid #f2f2f2;
+    margin: 0;
+  }
+  .link-nav:hover {
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+    color: #0065fc;
+  }
+  /* ************** * Search-bar * *********** */
+.search-bar {
+  padding-top: 30px;
+}
+  input {
+    width: 80%;
+  }
+  button span {
+    display: none;
+  }
+  .fa-magnifying-glass {
+    display: flex;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    width: 17px;
+  }
+  /* ************ * Flitre * ************** */
+  .container-filtre {
+    display: flex;
+    align-items: first baseline;
+    flex-direction: column;
+  }
+  .panel-filtre {
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 25px;
+  }
+  .box-filtre {
+    width:47%;
+  }
+  .filtre-title {
+    padding-left: 10px;
+  }
+  .box-filtre h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* //////////////////// * main * /////////////////////////// */
+  main {
+    display: flex;
+    flex-direction: column-reverse; 
+    gap:0;
+  }
+
+  .card {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  /* ***************** * hebergement * ********************* */
+  .hebergement-box {
+    padding: 0;
+    gap: 0;
+}
+.hebergement-panel {
+  background-color: #ffffff;
+  border-radius: 0;
+  box-shadow: none;
+  
+}
+  /* *************** * populaires * ****************** */
+  .populaires-panel {
+    border-radius: 0;
+  }
+  .box-populaires {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  /* /////////////////////////////// * aside * ///////////////////////////// */
+
+  /* ***************************** * activites * ************************** */ 
+  .box-activites {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    row-gap: 24px;
+  }
+  .activites-panel {
+    width: 100%;
+    
+  }
+  .card-activites {
+    width: 100%;
+  }
+  .activites-img {
+    height: 190px;
+  }
+/* /////////////////////////////// * Footer * ************************** */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+  }
+}
